@@ -12,12 +12,16 @@ cl1(int arr1[], int l)
 cout << "N = " << l << endl;
 for(int a = 0; a<l; a++)
 {
-cout << arr1[a] << " ";
+cout << arr1[a];
+	if(a!=l-1)
+		cout<<" ";
 }
 cout << endl;
 for( ; l>0; l--)
 {
-cout << arr1[l-1] << " ";
+cout << arr1[l-1];
+	if(l!=1)
+		cout<<" ";
 }
 cout << endl;
 };
