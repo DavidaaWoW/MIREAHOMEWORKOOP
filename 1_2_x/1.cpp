@@ -8,7 +8,8 @@ using namespace std;
 class triangle
 {
 private:
-int p,q,r,s;
+int q,r,s;
+float p;
 public:
 triangle(int a, int b, int c)
 {
