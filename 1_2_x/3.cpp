@@ -7,15 +7,9 @@ using namespace std;
 
 class cl1
 {
-int n;
+long long int n;
 public:
-void put(int value)
-{
-n = value;
-this->print1(n);
-this->print2(this->count(abs(n)));
-}
-int count(int k)
+int count(long long int k)
 {
 int temp = 0;
 if(k==0)
@@ -27,13 +21,19 @@ temp++;
 }
 return temp;
 }
-void print1(int k)
+void print1(long long int k)
 {
 cout<<"n = "<<k << endl;
 }
 void print2(int k)
 {
 cout<<"N = " << k;
+}
+void put(long long int value)
+{
+n = value;
+this->print1(n);
+this->print2(this->count(abs(n)));
 }
 };
 
